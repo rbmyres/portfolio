@@ -4,7 +4,7 @@ import { personalInfo } from "@/lib/data";
 export default function Hero() {
   return (
     <section className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 py-20 md:flex-row md:gap-16 md:py-32">
-      <div className="relative h-44 w-44 flex-shrink-0 overflow-hidden rounded-full ring-1 ring-stone-200 md:h-56 md:w-56">
+      <div className="relative h-44 w-44 shrink-0 overflow-hidden rounded-full ring-1 ring-stone-200 md:h-56 md:w-56">
         <Image
           src={personalInfo.profileImagePath}
           alt={`Photo of ${personalInfo.name}`}
