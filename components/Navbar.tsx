@@ -67,7 +67,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile dropdown menu */}
-        <ul className="hidden flex-col gap-1 border-t border-stone-100 pb-4 peer-checked:flex md:hidden">
+        <ul className="absolute left-0 right-0 top-full z-50 hidden flex-col gap-1 border-t border-stone-200/40 bg-white px-6 pb-4 shadow-lg peer-checked:flex md:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
