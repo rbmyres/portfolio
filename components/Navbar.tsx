@@ -67,18 +67,22 @@ export default function Navbar() {
         </div>
 
         {/* Mobile dropdown menu */}
-        <ul className="absolute left-0 right-0 top-full z-50 hidden flex-col gap-1 border-t border-stone-200/40 bg-white px-6 pb-4 shadow-lg peer-checked:flex md:hidden">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="block rounded-lg px-3 py-2.5 text-sm text-stone-500 transition-colors duration-200 hover:bg-stone-50 hover:text-stone-900"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="absolute left-0 right-0 top-full z-50 grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out peer-checked:grid-rows-[1fr] md:hidden">
+          <div className="overflow-hidden">
+            <ul className="flex flex-col gap-1 border-t border-stone-200/40 bg-white px-6 pb-4 shadow-lg">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="block rounded-lg px-3 py-2.5 text-sm text-stone-500 transition-colors duration-200 hover:bg-stone-50 hover:text-stone-900"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
   );
