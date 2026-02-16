@@ -111,6 +111,15 @@ export const skillCategories: SkillCategory[] = [
 
 export const projects: Project[] = [
   {
+    title: "Lenoras Restaurant",
+    description:
+      "Website for Lenoras Restaurant",
+    imagePath: "/images/lenoras.png",
+    techStack: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "MySQL", "Cloudflare R2"],
+    liveUrl: "https://lenorasrestaurant.com/",
+    githubUrl:""
+  },
+  {
     title: "Mixer",
     description:
       "Full-Stack social media application",
