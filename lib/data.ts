@@ -63,6 +63,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Java", iconPath: "/icons/java.svg" },
       { name: "Python", iconPath: "/icons/python.svg" },
       { name: "SQL", iconPath: "/icons/sql.svg" },
+      { name: "R", iconPath: "/icons/r.svg" },
     ],
   },
   {
@@ -105,11 +106,21 @@ export const skillCategories: SkillCategory[] = [
       { name: "Git", iconPath: "/icons/git.svg" },
       { name: "CI/CD Pipeline", iconPath: "/icons/cicd.svg" },
       { name: "Agile", iconPath: "/icons/agile.svg" },
+      { name: "Vitest", iconPath: "/icons/vitest.svg" },
     ],
   },
 ];
 
 export const projects: Project[] = [
+  {
+    title: "Stat Compare",
+    description:
+      "Full stack NFL statistics and comparison platform",
+    imagePath: "/images/stat-compare.png",
+    techStack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "R", "Vitest"],
+    liveUrl: "https://stat-compare.com/",
+    githubUrl: "https://github.com/rbmyres/stat-compare",
+  },
   {
     title: "Lenoras Restaurant",
     description:
